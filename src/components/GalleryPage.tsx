@@ -13,7 +13,7 @@ const GalleryPage = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg",
+      src: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Latte art profesional",
       altFr: "Latte art professionnel",
       category: "Bebidas",
@@ -21,7 +21,7 @@ const GalleryPage = () => {
     },
     {
       id: 2,
-      src: "https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg",
+      src: "https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Croissant recién horneado",
       altFr: "Croissant fraîchement cuit",
       category: "Panadería",
@@ -29,7 +29,7 @@ const GalleryPage = () => {
     },
     {
       id: 3,
-      src: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+      src: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Plato signature del chef",
       altFr: "Plat signature du chef",
       category: "Platos principales",
@@ -37,7 +37,7 @@ const GalleryPage = () => {
     },
     {
       id: 4,
-      src: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+      src: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Terraza al atardecer",
       altFr: "Terrasse au coucher du soleil",
       category: "Ambiente",
@@ -45,7 +45,7 @@ const GalleryPage = () => {
     },
     {
       id: 5,
-      src: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg",
+      src: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Pasta italiana artesanal",
       altFr: "Pâtes italiennes artisanales",
       category: "Platos principales",
@@ -53,7 +53,7 @@ const GalleryPage = () => {
     },
     {
       id: 6,
-      src: "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
+      src: "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Cóctel signature",
       altFr: "Cocktail signature",
       category: "Bebidas",
@@ -61,7 +61,7 @@ const GalleryPage = () => {
     },
     {
       id: 7,
-      src: "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg",
+      src: "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Tarta de chocolate",
       altFr: "Gâteau au chocolat",
       category: "Postres",
@@ -69,7 +69,7 @@ const GalleryPage = () => {
     },
     {
       id: 8,
-      src: "https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg",
+      src: "https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Ensalada fresca",
       altFr: "Salade fraîche",
       category: "Entrantes",
@@ -77,7 +77,7 @@ const GalleryPage = () => {
     },
     {
       id: 9,
-      src: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+      src: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Interior del restaurante",
       altFr: "Intérieur du restaurant",
       category: "Ambiente",
@@ -85,7 +85,7 @@ const GalleryPage = () => {
     },
     {
       id: 10,
-      src: "https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg",
+      src: "https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Paella valenciana",
       altFr: "Paella valencienne",
       category: "Platos principales",
@@ -93,7 +93,7 @@ const GalleryPage = () => {
     },
     {
       id: 11,
-      src: "https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg",
+      src: "https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Café con arte latte",
       altFr: "Café avec latte art",
       category: "Bebidas",
@@ -101,7 +101,7 @@ const GalleryPage = () => {
     },
     {
       id: 12,
-      src: "https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg",
+      src: "https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=800",
       alt: "Mesa preparada",
       altFr: "Table dressée",
       category: "Ambiente",
@@ -191,6 +191,10 @@ const GalleryPage = () => {
                       src={image.src}
                       alt={image.alt}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      onError={(e) => {
+                        console.log('Image failed to load:', image.src);
+                        e.currentTarget.style.display = 'none';
+                      }}
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
