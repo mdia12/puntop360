@@ -16,8 +16,6 @@ const Header = () => {
   const menuItems = [
     { label: 'Servicios', href: '/#servicios' },
     { label: 'Fotografía', href: '/#fotografia' },
-    { label: 'Tecnología', href: '/#tecnologia' },
-    { label: 'Casos de Éxito', href: '/#casos' },
     { label: 'Contacto', href: '/#contacto' }
   ];
 
