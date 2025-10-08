@@ -15,6 +15,7 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
 import PilotPage from './components/PilotPage';
+import GalleryPage from './components/GalleryPage';
 import Gallery from './components/Gallery';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
@@ -45,6 +46,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pilot" element={<PilotPage />} />
+        <Route path="/galeria" element={<GalleryPage />} />
       </Routes>
     </Router>
   );

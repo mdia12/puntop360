@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
   const examples = [
@@ -58,16 +59,14 @@ const Gallery = () => {
         </div>
         
         <div className="text-center mt-12 animate-slide-up" style={{ animationDelay: '0.5s' }}>
-          <a 
-            href="https://wa.me/34636814464?text=Hola%20Punto360%2C%20quiero%20ver%20más%20ejemplos%20del%20Pack%20Foto"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            to="/galeria"
             className="inline-block bg-gold hover:bg-gold-light text-dark font-poppins font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
             data-event="cta_gallery_contact"
           >
             <span data-lang="es">Ver más ejemplos</span>
             <span data-lang="fr" className="hidden">Voir plus d'exemples</span>
-          </a>
+          </Link>
         </div>
         
         {/* Legal note */}
