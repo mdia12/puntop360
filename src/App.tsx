@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import ReservationBooster from './components/ReservationBooster';
-import CasosExito from './components/CasosExito';
 import Photography from './components/Photography';
 import Technology from './components/Technology';
 import Pricing from './components/Pricing';
@@ -26,7 +25,6 @@ const HomePage = () => (
       <Hero />
       <Services />
       <ReservationBooster />
-      <CasosExito />
       <Photography />
       <Pricing />
       <Gallery />
