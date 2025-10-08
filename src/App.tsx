@@ -26,8 +26,8 @@ const HomePage = () => (
       <Services />
       <ReservationBooster />
       <Photography />
-      <Pricing />
       <Gallery />
+      <Pricing />
       <HowItWorks />
       <FAQ />
       <ValueProposition />
