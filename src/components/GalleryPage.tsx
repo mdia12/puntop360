@@ -5,6 +5,11 @@ import Header from './Header';
 import Footer from './Footer';
 
 const GalleryPage = () => {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const galleryImages = [
     {
       id: 1,
