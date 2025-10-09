@@ -24,10 +24,10 @@ const HomePage = () => (
     <Header />
     <main>
       <Hero />
-      <Services />
-      <ReservationBooster />
       <Photography />
       <Gallery />
+      <Services />
+      <ReservationBooster />
       <Pricing />
       <HowItWorks />
       <FAQ />
