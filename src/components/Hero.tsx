@@ -19,19 +19,19 @@ const Hero = () => {
         <div className="max-w-4xl animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold font-poppins text-white leading-tight mb-6">
             <span className="text-gold">Punto360</span>
-            <span className="text-white block">Comunicación & Automatización</span> 
-            <span className="text-white">para Restaurantes</span>
+            <span className="text-white block">Fotografía Gastronómica</span> 
+            <span className="text-white">& Marketing Digital</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 font-poppins font-light mb-8 max-w-2xl leading-relaxed">
-            Marketing digital + Automatización = <span className="text-gold font-medium">Más clientes, menos gestión</span>
+            Fotografía profesional + Marketing digital = <span className="text-gold font-medium">Más reservas, más engagement</span>
           </p>
           
           {/* Outcome-oriented sub-promise */}
           <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <p className="text-lg md:text-xl text-gold font-poppins font-medium max-w-3xl leading-relaxed">
-              <span data-lang="es">Convertimos llamadas perdidas y DMs en reservas. Más cubiertos, más reseñas 5★, sin más carga para tu equipo.</span>
-              <span data-lang="fr" className="hidden">On transforme appels manqués et DM en réservations. Plus de couverts, plus d'avis 5★, sans charge pour votre équipe.</span>
+              <span data-lang="es">Imágenes que despiertan el apetito + estrategias digitales que convierten. Tu restaurante destacará en redes y Google.</span>
+              <span data-lang="fr" className="hidden">Images qui donnent faim + stratégies digitales qui convertissent. Votre restaurant se démarquera sur les réseaux et Google.</span>
             </p>
           </div>
           
