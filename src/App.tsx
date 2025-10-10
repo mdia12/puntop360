@@ -12,6 +12,7 @@ import FAQ from './components/FAQ';
 import ValueProposition from './components/ValueProposition';
 import CTA from './components/CTA';
 import FinalCTA from './components/FinalCTA';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
 import PilotPage from './components/PilotPage';
@@ -32,6 +33,7 @@ const HomePage = () => (
       <HowItWorks />
       <FAQ />
       <ValueProposition />
+      <Blog />
       <CTA />
       <FinalCTA />
     </main>
