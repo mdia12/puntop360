@@ -198,11 +198,16 @@ const Blog = () => {
                   <span data-lang="fr" className="hidden">{article.excerptFr}</span>
                 </p>
                 
-                <button className="flex items-center text-gold hover:text-gold-light font-poppins font-semibold text-sm transition-colors group-hover:translate-x-1 transform duration-300">
+                <a 
+                  href={`https://wa.me/34636814464?text=Hola%20Punto360%2C%20me%20interesa%20el%20artículo%20sobre%20${encodeURIComponent(article.title)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gold hover:text-gold-light font-poppins font-semibold text-sm transition-colors group-hover:translate-x-1 transform duration-300"
+                >
                   <span data-lang="es">Leer más</span>
                   <span data-lang="fr" className="hidden">Lire plus</span>
                   <ArrowRight className="h-4 w-4 ml-2" />
-                </button>
+                </a>
               </div>
             </article>
           ))}
