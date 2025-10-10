@@ -37,35 +37,14 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up">
             <a 
-              href="https://calendly.com/punto360-demo" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-gold hover:bg-gold-light text-dark font-poppins font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center group"
-              data-event="cta_demo"
-            >
-              <span data-lang="es">Reserva demo (15 min)</span>
-              <span data-lang="fr" className="hidden">Réserver démo (15 min)</span>
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            
-            <a 
               href="https://wa.me/34636814464?text=Hola%20Punto360%2C%20quiero%20aumentar%20reservas" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="border-2 border-gold text-gold hover:bg-gold hover:text-dark font-poppins font-semibold px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center group"
+              className="bg-gold hover:bg-gold-light text-dark font-poppins font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center group"
               data-event="cta_whatsapp"
             >
               <span data-lang="es">WhatsApp directo</span>
               <span data-lang="fr" className="hidden">WhatsApp direct</span>
-            </a>
-            
-            <a 
-              href="#casos" 
-              className="border-2 border-gold text-gold hover:bg-gold hover:text-dark font-poppins font-semibold px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center group"
-            >
-              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              <span data-lang="es">Ver casos de éxito</span>
-              <span data-lang="fr" className="hidden">Voir cas de succès</span>
             </a>
           </div>
         </div>
