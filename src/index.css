@@ -60,3 +60,47 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Prose styles for blog articles */
+.prose h2 {
+  color: #C8A25F;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.prose h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.prose strong {
+  color: #C8A25F;
+  font-weight: 600;
+}
+
+.prose em {
+  color: #9CA3AF;
+  font-style: italic;
+}

@@ -199,9 +199,12 @@ const Blog = () => {
                 </p>
                 
                 <a 
-                  href={`https://wa.me/34636814464?text=Hola%20Punto360%2C%20me%20interesa%20el%20artículo%20sobre%20${encodeURIComponent(article.title)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`/blog/${article.id === 1 ? 'fotografia-gastronomica-consejos' : 
+                    article.id === 2 ? 'google-business-resenas' : 
+                    article.id === 3 ? 'instagram-restaurantes-2025' : 
+                    article.id === 4 ? 'automatizacion-reservas-casos-exito' : 
+                    article.id === 5 ? 'tendencias-gastronomicas-2025' : 
+                    'whatsapp-business-restaurantes'}`}
                   className="flex items-center text-gold hover:text-gold-light font-poppins font-semibold text-sm transition-colors group-hover:translate-x-1 transform duration-300"
                 >
                   <span data-lang="es">Leer más</span>

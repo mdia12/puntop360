@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
 import PilotPage from './components/PilotPage';
 import GalleryPage from './components/GalleryPage';
+import BlogArticle from './components/BlogArticle';
 import Gallery from './components/Gallery';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/pilot" element={<PilotPage />} />
         <Route path="/galeria" element={<GalleryPage />} />
+        <Route path="/blog/:slug" element={<BlogArticle />} />
       </Routes>
     </Router>
   );
