@@ -13,7 +13,7 @@ const GalleryPage = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://res.cloudinary.com/dqazq8xvk/image/upload/v1760202780/WhatsApp_Image_2025-10-11_at_19.11.06_xbjffy.jpg",
       alt: "Latte art profesional",
       altFr: "Latte art professionnel",
       category: "Bebidas",
