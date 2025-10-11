@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Gallery = () => {
   const examples = [
     {
-      src: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg",
+      src: "https://res.cloudinary.com/dqazq8xvk/image/upload/v1760202780/WhatsApp_Image_2025-10-11_at_19.11.06_xbjffy.jpg",
       alt: "Latte art profesional",
       altFr: "Latte art professionnel"
     },
