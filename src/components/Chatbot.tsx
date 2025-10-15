@@ -23,7 +23,7 @@ const Chatbot = () => {
           inputPlaceholder: 'Escribe tu pregunta...',
         },
       },
-      loadPreviousSession: true,
+      loadPreviousSession: false,
       enableStreaming: false,
     });
   }, []);
