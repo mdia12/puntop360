@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import ReservationBooster from './components/ReservationBooster';
 import Photography from './components/Photography';
-import Technology from './components/Technology';
 import Pricing from './components/Pricing';
 import HowItWorks from './components/HowItWorks';
 import FAQ from './components/FAQ';
@@ -19,7 +18,6 @@ import PilotPage from './components/PilotPage';
 import GalleryPage from './components/GalleryPage';
 import BlogArticle from './components/BlogArticle';
 import Gallery from './components/Gallery';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
 import GDPRBanner from './components/GDPRBanner';
 import DiagnosticPage from './components/DiagnosticPage';
 
