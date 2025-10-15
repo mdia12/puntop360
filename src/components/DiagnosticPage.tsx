@@ -65,13 +65,12 @@ const DiagnosticPage = () => {
 
       console.log('Envoi des données:', payload);
 
-      const response = await fetch('https://mdia.app.n8n.cloud/webhook/b10c96a5-9a5c-4b48-8115-34e4f145ba35-restaurant', {
+      const response = await fetch('https://mdia.app.n8n.cloud/webhook/b10c96a5-9a5c-4b48-8115-34e4f145ba35', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(payload),
-        mode: 'cors'
+        body: JSON.stringify(payload)
       });
 
       console.log('Réponse reçue:', response.status, response.statusText);
