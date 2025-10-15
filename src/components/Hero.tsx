@@ -36,11 +36,18 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up">
-            <a 
-              href="https://wa.me/34636814464?text=Hola%20Punto360%2C%20quiero%20aumentar%20reservas" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <a
+              href="/diagnostic"
               className="bg-gold hover:bg-gold-light text-dark font-poppins font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center group"
+            >
+              <span>Diagnóstico Gratuito</span>
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="https://wa.me/34636814464?text=Hola%20Punto360%2C%20quiero%20aumentar%20reservas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent border-2 border-gold hover:bg-gold hover:text-dark text-gold font-poppins font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center group"
               data-event="cta_whatsapp"
             >
               <span data-lang="es">WhatsApp directo</span>
