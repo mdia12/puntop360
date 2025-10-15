@@ -59,10 +59,13 @@ const DiagnosticPage = () => {
 
       console.log('Envoi des données:', payload);
 
-      const response = await fetch('https://mdia.app.n8n.cloud/webhook/a7793e2b-0937-4b4a-8280-f6b892197f1b', {
+      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/webhook-proxy`;
+
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         },
         body: JSON.stringify(payload)
       });
