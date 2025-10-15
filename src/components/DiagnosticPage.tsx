@@ -58,9 +58,9 @@ const DiagnosticPage = () => {
       };
 
       console.log('Envoi des données:', payload);
-      console.log('URL webhook:', 'https://mdia.app.n8n.cloud/webhook/b10c96a5-9a5c-4b48-8115-34e4f145ba35');
+      console.log('URL webhook:', 'https://mdia.app.n8n.cloud/webhook/a7793e2b-0937-4b4a-8280-f6b892197f1b');
 
-      const response = await fetch('https://mdia.app.n8n.cloud/webhook/b10c96a5-9a5c-4b48-8115-34e4f145ba35', {
+      const response = await fetch('https://mdia.app.n8n.cloud/webhook/a7793e2b-0937-4b4a-8280-f6b892197f1b', {
         method: 'POST',
         mode: 'no-cors',
         headers: {
