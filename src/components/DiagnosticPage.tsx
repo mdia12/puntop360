@@ -69,22 +69,36 @@ const DiagnosticPage = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify(payload)
       });
 
       console.log('Réponse reçue:', response.status, response.statusText);
 
-      if (response.ok || response.status === 200) {
+      // N8n peut retourner différents status codes selon la configuration
+      if (response.ok || response.status === 200 || response.status === 201) {
         setIsSubmitted(true);
+        console.log('Soumission réussie!');
       } else {
-        const errorText = await response.text();
+        let errorText = '';
+        try {
+          errorText = await response.text();
+        } catch (e) {
+          errorText = 'Impossible de lire la réponse';
+        }
         console.error('Erreur du serveur:', errorText);
         throw new Error(`Erreur ${response.status}: ${response.statusText}`);
       }
     } catch (error) {
       console.error('Erreur complète:', error);
-      alert(`Une erreur est survenue: ${error instanceof Error ? error.message : 'Erreur inconnue'}. Veuillez réessayer.`);
+
+      // Si c'est une erreur de réseau (CORS, etc), on affiche un message plus clair
+      if (error instanceof TypeError && error.message.includes('fetch')) {
+        alert('Erreur de connexion au serveur. Veuillez vérifier que le webhook n8n est correctement configuré avec les en-têtes CORS.');
+      } else {
+        alert(`Une erreur est survenue: ${error instanceof Error ? error.message : 'Erreur inconnue'}. Veuillez réessayer.`);
+      }
     } finally {
       setIsSubmitting(false);
     }
