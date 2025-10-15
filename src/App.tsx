@@ -21,6 +21,7 @@ import BlogArticle from './components/BlogArticle';
 import Gallery from './components/Gallery';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import GDPRBanner from './components/GDPRBanner';
+import DiagnosticPage from './components/DiagnosticPage';
 
 const HomePage = () => (
   <div className="font-poppins">
@@ -53,6 +54,7 @@ function App() {
         <Route path="/pilot" element={<PilotPage />} />
         <Route path="/galeria" element={<GalleryPage />} />
         <Route path="/blog/:slug" element={<BlogArticle />} />
+        <Route path="/diagnostic" element={<DiagnosticPage />} />
       </Routes>
       <GDPRBanner />
     </Router>

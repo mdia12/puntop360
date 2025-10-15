@@ -16,7 +16,8 @@ const Header = () => {
   const menuItems = [
     { label: 'Servicios', href: '/#servicios' },
     { label: 'Fotografía', href: '/#fotografia' },
-    { label: 'Blog', href: '/#blog' }
+    { label: 'Blog', href: '/#blog' },
+    { label: 'Diagnostic', href: '/diagnostic' }
   ];
 
   const handleNavClick = (href: string) => {
