@@ -48,19 +48,13 @@ const DiagnosticPage = () => {
 
     try {
       const payload = {
-        restaurant_name: formData.restaurant_name,
-        type: formData.type,
-        city: formData.city,
-        presence: formData.presence.join(', '),
-        comms_state: formData.comms_state.join(', '),
-        main_goal: formData.main_goal,
-        business_description: formData.business_description,
-        photo_history: formData.photo_history,
-        visual_needs: formData.visual_needs.join(', '),
-        style: formData.style,
-        pain_points: formData.pain_points.join(', '),
-        email: formData.email,
-        newsletter: formData.newsletter
+        'nom du restaurant': formData.restaurant_name,
+        'type d etablissement': formData.type,
+        'ville': formData.city,
+        'situation actuelle': `Présence en ligne: ${formData.presence.join(', ')}. Communication: ${formData.comms_state.join(', ')}. Objectif: ${formData.main_goal}. ${formData.business_description}`,
+        'visuel et image': `Séance photo pro: ${formData.photo_history}. Besoins visuels: ${formData.visual_needs.join(', ')}. Style souhaité: ${formData.style}`,
+        'Problematique actuelle': formData.pain_points.join(', '),
+        'email': formData.email
       };
 
       console.log('Envoi des données:', payload);
