@@ -58,23 +58,24 @@ const DiagnosticPage = () => {
       };
 
       console.log('Envoi des données:', payload);
-      console.log('URL webhook:', 'https://mdia.app.n8n.cloud/webhook/a7793e2b-0937-4b4a-8280-f6b892197f1b');
 
       const response = await fetch('https://mdia.app.n8n.cloud/webhook/a7793e2b-0937-4b4a-8280-f6b892197f1b', {
         method: 'POST',
-        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(payload)
       });
 
-      console.log('Réponse reçue:', response);
+      console.log('Réponse reçue:', response.status);
 
-      // Avec mode no-cors, on ne peut pas lire la réponse mais on peut supposer que ça a fonctionné
-      // si aucune erreur n'est levée
-      setIsSubmitted(true);
-      console.log('Données envoyées au webhook (mode no-cors)');
+      if (response.ok) {
+        const result = await response.json();
+        console.log('Résultat:', result);
+        setIsSubmitted(true);
+      } else {
+        throw new Error(`Erreur ${response.status}`);
+      }
 
     } catch (error) {
       console.error('Erreur complète:', error);
