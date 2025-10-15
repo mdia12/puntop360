@@ -11,6 +11,7 @@ const DiagnosticPage = () => {
     presence: [] as string[],
     comms_state: [] as string[],
     main_goal: '',
+    business_description: '',
     photo_history: '',
     visual_needs: [] as string[],
     style: '',
@@ -22,7 +23,7 @@ const DiagnosticPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
     if (type === 'checkbox') {
       const checked = (e.target as HTMLInputElement).checked;
@@ -31,7 +32,7 @@ const DiagnosticPage = () => {
       } else {
         setFormData(prev => ({
           ...prev,
-          [name]: checked 
+          [name]: checked
             ? [...prev[name as keyof typeof prev] as string[], value]
             : (prev[name as keyof typeof prev] as string[]).filter(item => item !== value)
         }));
@@ -53,6 +54,7 @@ const DiagnosticPage = () => {
         presence: formData.presence.join(', '),
         comms_state: formData.comms_state.join(', '),
         main_goal: formData.main_goal,
+        business_description: formData.business_description,
         photo_history: formData.photo_history,
         visual_needs: formData.visual_needs.join(', '),
         style: formData.style,
@@ -273,6 +275,21 @@ const DiagnosticPage = () => {
                       <option value="Améliorer l'image">Améliorer l'image</option>
                       <option value="Mettre en avant les plats">Mettre en avant les plats</option>
                     </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-white font-poppins font-medium mb-2">
+                      Parlez-nous de votre restaurant : objectifs, défis, besoins spécifiques *
+                    </label>
+                    <textarea
+                      name="business_description"
+                      value={formData.business_description}
+                      onChange={handleInputChange}
+                      required
+                      rows={5}
+                      className="w-full bg-gray-800 border border-gray-600 text-white rounded-lg px-4 py-3 font-poppins focus:outline-none focus:border-gold transition-colors resize-none"
+                      placeholder="Ex: Nous sommes un restaurant méditerranéen qui cherche à attirer plus de clients le midi. Notre principal défi est de nous démarquer de la concurrence et de mieux présenter nos plats signature sur les réseaux sociaux..."
+                    />
                   </div>
                 </div>
 
