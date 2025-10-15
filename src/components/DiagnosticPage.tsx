@@ -46,34 +46,44 @@ const DiagnosticPage = () => {
     setIsSubmitting(true);
 
     try {
+      const payload = {
+        restaurant_name: formData.restaurant_name,
+        type: formData.type,
+        city: formData.city,
+        presence: formData.presence.join(', '),
+        comms_state: formData.comms_state.join(', '),
+        main_goal: formData.main_goal,
+        photo_history: formData.photo_history,
+        visual_needs: formData.visual_needs.join(', '),
+        style: formData.style,
+        pain_points: formData.pain_points.join(', '),
+        email: formData.email,
+        newsletter: formData.newsletter
+      };
+
+      console.log('Envoi des données:', payload);
+
       const response = await fetch('https://mdia.app.n8n.cloud/webhook/b10c96a5-9a5c-4b48-8115-34e4f145ba35-restaurant', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          restaurant_name: formData.restaurant_name,
-          type: formData.type,
-          city: formData.city,
-          presence: formData.presence,
-          comms_state: formData.comms_state,
-          main_goal: formData.main_goal,
-          photo_history: formData.photo_history,
-          visual_needs: formData.visual_needs,
-          style: formData.style,
-          pain_points: formData.pain_points,
-          email: formData.email
-        })
+        body: JSON.stringify(payload),
+        mode: 'cors'
       });
 
-      if (response.ok) {
+      console.log('Réponse reçue:', response.status, response.statusText);
+
+      if (response.ok || response.status === 200) {
         setIsSubmitted(true);
       } else {
-        throw new Error('Erreur lors de l\'envoi');
+        const errorText = await response.text();
+        console.error('Erreur du serveur:', errorText);
+        throw new Error(`Erreur ${response.status}: ${response.statusText}`);
       }
     } catch (error) {
-      console.error('Erreur:', error);
-      alert('Une erreur est survenue. Veuillez réessayer.');
+      console.error('Erreur complète:', error);
+      alert(`Une erreur est survenue: ${error instanceof Error ? error.message : 'Erreur inconnue'}. Veuillez réessayer.`);
     } finally {
       setIsSubmitting(false);
     }
