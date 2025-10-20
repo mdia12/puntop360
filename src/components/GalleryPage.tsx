@@ -13,10 +13,10 @@ const GalleryPage = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_4.jpg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_6.jpg",
       alt: "Latte art profesional",
       altFr: "Latte art professionnel",
-      category: "Entrantes",
+      category: "Platos principale",
       categoryFr: "Boissons"
     },
     {
@@ -40,12 +40,12 @@ const GalleryPage = () => {
       src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_6.jpg",
       alt: "Terraza al atardecer",
       altFr: "Terrasse au coucher du soleil",
-      category: "Platos principales",
+      category: "Platos principale",
       categoryFr: "Plats principauxe"
     },
     {
       id: 5,
-      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_10.jpg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_10.jpg0",
       alt: "Pasta italiana artesanal",
       altFr: "Pâtes italiennes artisanales",
       category: "Postres",
@@ -72,7 +72,7 @@ const GalleryPage = () => {
       src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_2.jpg",
       alt: "Ensalada fresca",
       altFr: "Salade fraîche",
-      category: "Bebidas",
+      category: "Entrantes",
       categoryFr: "Entrées"
     },
     {
