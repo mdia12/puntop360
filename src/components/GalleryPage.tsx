@@ -13,10 +13,10 @@ const GalleryPage = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_1.jpg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_6.jpg",
       alt: "Latte art profesional",
       altFr: "Latte art professionnel",
-      category: "Bebidas",
+      category: "Platos principale",
       categoryFr: "Boissons"
     },
     {
