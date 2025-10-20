@@ -21,11 +21,11 @@ const GalleryPage = () => {
     },
     {
       id: 2,
-      src: "https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_5.jpg",
       alt: "Croissant recién horneado",
       altFr: "Croissant fraîchement cuit",
-      category: "Panadería",
-      categoryFr: "Boulangerie"
+      category: "Postres",
+      categoryFr: "Desserts"
     },
     {
       id: 3,
@@ -45,11 +45,11 @@ const GalleryPage = () => {
     },
     {
       id: 5,
-      src: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_10.jpg0",
       alt: "Pasta italiana artesanal",
       altFr: "Pâtes italiennes artisanales",
-      category: "Platos principales",
-      categoryFr: "Plats principaux"
+      category: "Postres",
+      categoryFr: "Desserts"
     },
     {
       id: 6,
