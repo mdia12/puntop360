@@ -53,7 +53,7 @@ const GalleryPage = () => {
     },
     {
       id: 6,
-      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_2.jpg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_1.jpg",
       alt: "Cóctel signature",
       altFr: "Cocktail signature",
       category: "Bebidas",
