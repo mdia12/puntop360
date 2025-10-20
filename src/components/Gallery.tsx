@@ -9,17 +9,17 @@ const Gallery = () => {
       altFr: "Latte art professionnel"
     },
     {
-      src: "https://images.pexels.com/photos/1775043/pexels-photo-1775043.jpeg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/4%20premieres%20photos/plato_2.jpg",
       alt: "Croissant recién horneado",
       altFr: "Croissant fraîchement cuit"
     },
     {
-      src: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/4%20premieres%20photos/plato_3.jpg",
       alt: "Plato signature del chef",
       altFr: "Plat signature du chef"
     },
     {
-      src: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/4%20premieres%20photos/plato_4.jpg",
       alt: "Terraza al atardecer",
       altFr: "Terrasse au coucher du soleil"
     }
