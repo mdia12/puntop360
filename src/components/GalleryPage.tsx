@@ -16,7 +16,7 @@ const GalleryPage = () => {
       src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_4.jpg",
       alt: "Latte art profesional",
       altFr: "Latte art professionnel",
-      category: "Platos principales",
+      category: "Entrantes",
       categoryFr: "Boissons"
     },
     {
@@ -40,7 +40,7 @@ const GalleryPage = () => {
       src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_6.jpg",
       alt: "Terraza al atardecer",
       altFr: "Terrasse au coucher du soleil",
-      category: "Platos principale",
+      category: "Platos principales",
       categoryFr: "Plats principauxe"
     },
     {
