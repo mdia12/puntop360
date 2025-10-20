@@ -77,7 +77,7 @@ const GalleryPage = () => {
     },
     {
       id: 9,
-      src: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/ambiente/ambiente_2.jpg",
       alt: "Interior del restaurante",
       altFr: "Intérieur du restaurant",
       category: "Ambiente",
@@ -93,11 +93,11 @@ const GalleryPage = () => {
     },
     {
       id: 11,
-      src: "https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/ambiente/ambiente_1.jpg",
       alt: "Café con arte latte",
       altFr: "Café avec latte art",
-      category: "Bebidas",
-      categoryFr: "Boissons"
+      category: "Ambiente",
+      categoryFr: "Ambiance"
     },
     {
       id: 12,
