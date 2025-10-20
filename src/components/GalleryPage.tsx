@@ -29,7 +29,7 @@ const GalleryPage = () => {
     },
     {
       id: 3,
-      src: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_3.jpg",
       alt: "Plato signature del chef",
       altFr: "Plat signature du chef",
       category: "Platos principales",
@@ -37,11 +37,11 @@ const GalleryPage = () => {
     },
     {
       id: 4,
-      src: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/platos%20principal/plato%20principale_6.jpg",
       alt: "Terraza al atardecer",
       altFr: "Terrasse au coucher du soleil",
-      category: "Ambiente",
-      categoryFr: "Ambiance"
+      category: "Platos principale",
+      categoryFr: "Plats principauxe"
     },
     {
       id: 5,
