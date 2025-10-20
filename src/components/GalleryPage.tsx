@@ -45,7 +45,7 @@ const GalleryPage = () => {
     },
     {
       id: 5,
-      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_10.jpg0",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_10.jpg",
       alt: "Pasta italiana artesanal",
       altFr: "Pâtes italiennes artisanales",
       category: "Postres",
