@@ -72,7 +72,7 @@ const GalleryPage = () => {
       src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_2.jpg",
       alt: "Ensalada fresca",
       altFr: "Salade fraîche",
-      category: "Entrantes",
+      category: "Bebidas",
       categoryFr: "Entrées"
     },
     {
