@@ -13,7 +13,7 @@ const GalleryPage = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/dqazq8xvk/image/upload/v1760202780/WhatsApp_Image_2025-10-11_at_19.11.06_xbjffy.jpg",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_1.jpg",
       alt: "Latte art profesional",
       altFr: "Latte art professionnel",
       category: "Bebidas",
@@ -53,7 +53,7 @@ const GalleryPage = () => {
     },
     {
       id: 6,
-      src: "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_2.jpg",
       alt: "Cóctel signature",
       altFr: "Cocktail signature",
       category: "Bebidas",
@@ -69,7 +69,7 @@ const GalleryPage = () => {
     },
     {
       id: 8,
-      src: "https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/bebidas/bebida_2.jpg",
       alt: "Ensalada fresca",
       altFr: "Salade fraîche",
       category: "Entrantes",
@@ -85,11 +85,11 @@ const GalleryPage = () => {
     },
     {
       id: 10,
-      src: "https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/entrantes/entrante_5.jpg",
       alt: "Paella valenciana",
       altFr: "Paella valencienne",
-      category: "Platos principales",
-      categoryFr: "Plats principaux"
+      category: "Entrantes",
+      categoryFr: "Entrée"
     },
     {
       id: 11,
