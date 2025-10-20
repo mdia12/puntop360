@@ -6,7 +6,8 @@ const Services = () => {
     {
       icon: Camera,
       title: 'Fotografía & Contenido Visual',
-      description: 'Fotografía profesional de alimentos, ambientes y sesiones para redes sociales que aumentan el apetito y las ganas de visitar tu restaurante.'
+      description: 'Fotografía profesional de alimentos, ambientes y sesiones para redes sociales que aumentan el apetito y las ganas de visitar tu restaurante.',
+      link: 'https://michaeldi.fr'
     },
     {
       icon: Smartphone,
@@ -43,23 +44,39 @@ const Services = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:bg-gray-700 hover:border-gold/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl group animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="bg-gold/10 rounded-full p-3 mb-4 w-fit group-hover:bg-gold/20 transition-colors">
-                <service.icon className="h-8 w-8 text-gold" />
+          {services.map((service, index) => {
+            const ServiceCard = (
+              <div
+                key={index}
+                className="bg-gray-800 border border-gray-700 rounded-2xl p-6 hover:bg-gray-700 hover:border-gold/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl group animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="bg-gold/10 rounded-full p-3 mb-4 w-fit group-hover:bg-gold/20 transition-colors">
+                  <service.icon className="h-8 w-8 text-gold" />
+                </div>
+                <h3 className="text-lg font-semibold font-poppins text-white mb-3 group-hover:text-gold transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-300 font-poppins text-sm leading-relaxed">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold font-poppins text-white mb-3 group-hover:text-gold transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-gray-300 font-poppins text-sm leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          ))}
+            );
+
+            return service.link ? (
+              <a
+                key={index}
+                href={service.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                {ServiceCard}
+              </a>
+            ) : (
+              ServiceCard
+            );
+          })}
         </div>
       </div>
     </section>
