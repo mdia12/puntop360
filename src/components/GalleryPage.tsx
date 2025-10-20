@@ -61,7 +61,7 @@ const GalleryPage = () => {
     },
     {
       id: 7,
-      src: "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_1.jpg",
       alt: "Tarta de chocolate",
       altFr: "Gâteau au chocolat",
       category: "Postres",
@@ -101,11 +101,11 @@ const GalleryPage = () => {
     },
     {
       id: 12,
-      src: "https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=800",
+      src: "https://lfbhdmswnbiostcprrke.supabase.co/storage/v1/object/public/photo%20site%20web/postres/postre_11.jpg",
       alt: "Mesa preparada",
       altFr: "Table dressée",
-      category: "Ambiente",
-      categoryFr: "Ambiance"
+      category: "Postres",
+      categoryFr: "Desserts"
     }
   ];
 
