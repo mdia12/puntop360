@@ -17,7 +17,7 @@ const Header = () => {
     { label: 'Servicios', href: '/#servicios' },
     { label: 'Fotografía', href: '/#fotografia' },
     { label: 'Blog', href: '/#blog' },
-    { label: 'Diagnostic', href: '/diagnostic' }
+    { label: 'Diagnóstico Gratuito', href: '/diagnostic' }
   ];
 
   const handleNavClick = (href: string) => {
