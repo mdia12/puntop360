@@ -20,8 +20,9 @@ const Header = () => {
     { label: 'Diagnóstico Gratuito', href: '/diagnostic' }
   ];
 
-  const handleNavClick = (href: string) => {
+  const handleNavClick = (href: string, e: React.MouseEvent) => {
     if (href.startsWith('/#')) {
+      e.preventDefault();
       // If we're not on the home page, navigate to home first
       if (window.location.pathname !== '/') {
         window.location.href = href;
@@ -34,6 +35,7 @@ const Header = () => {
         }
       }
     }
+    // For other links (like /diagnostic), let the router handle it
   };
 
   return (
@@ -58,10 +60,7 @@ const Header = () => {
               <a
                 key={index}
                 href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(item.href);
-                }}
+                onClick={(e) => handleNavClick(item.href, e)}
                 className="text-white hover:text-gold font-poppins font-medium transition-colors duration-200 relative group"
               >
                 {item.label}
@@ -95,8 +94,7 @@ const Header = () => {
                 key={index}
                 href={item.href}
                 onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(item.href);
+                  handleNavClick(item.href, e);
                   setIsMenuOpen(false);
                 }}
                 className="block py-3 text-white hover:text-gold font-poppins transition-colors"
