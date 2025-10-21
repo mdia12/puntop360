@@ -226,14 +226,12 @@ const Blog = () => {
             <span data-lang="es">Únete a nuestra comunidad y recibe estrategias exclusivas para hacer crecer tu restaurante</span>
             <span data-lang="fr" className="hidden">Rejoignez notre communauté et recevez des stratégies exclusives pour faire grandir votre restaurant</span>
           </p>
-          <a 
-            href="https://wa.me/34636814464?text=Hola%20Punto360%2C%20quiero%20recibir%20consejos%20para%20mi%20restaurante"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a
+            href="/diagnostic"
             className="inline-block bg-gold hover:bg-gold-light text-dark font-poppins font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
           >
-            <span data-lang="es">Contactar para más consejos</span>
-            <span data-lang="fr" className="hidden">Contacter pour plus de conseils</span>
+            <span data-lang="es">Diagnóstico Gratuito</span>
+            <span data-lang="fr" className="hidden">Diagnostic Gratuit</span>
           </a>
         </div>
       </div>
