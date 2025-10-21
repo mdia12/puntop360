@@ -22,14 +22,12 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up">
-            <a 
-              href="https://wa.me/34636814464" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <a
+              href="/diagnostic"
               className="bg-gold hover:bg-gold-light text-dark font-poppins font-bold px-10 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center group text-lg"
             >
               <MessageCircle className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform" />
-              Contactar por WhatsApp
+              Diagnóstico Gratuito
             </a>
             
             <a 
