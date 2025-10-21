@@ -147,8 +147,8 @@ const Pricing = () => {
         <div className="mt-20 animate-slide-up" style={{ animationDelay: '0.5s' }}>
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold font-poppins text-white mb-4">
-              <span data-lang="es">Opciones</span>
-              <span data-lang="fr" className="hidden">Options</span>
+              <span data-lang="es">Pack visual</span>
+              <span data-lang="fr" className="hidden">Pack visuel</span>
             </h3>
             <p className="text-xl text-gray-300 font-poppins max-w-2xl mx-auto">
               <span data-lang="es">Refuerza tu plan con producción visual lista para redes y Google Business</span>
