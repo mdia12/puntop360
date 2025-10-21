@@ -68,12 +68,10 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://wa.me/34636814464"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/diagnostic"
               className="bg-gold hover:bg-gold-light text-dark font-poppins font-semibold px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
             >
-              Contactar
+              Diagnóstico Gratuito
             </a>
           </nav>
           
@@ -103,13 +101,11 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://wa.me/34636814464"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/diagnostic"
               className="block mt-4 bg-gold text-dark font-poppins font-semibold px-6 py-3 rounded-full text-center transition-colors hover:bg-gold-light"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contactar
+              Diagnóstico Gratuito
             </a>
           </div>
         )}
