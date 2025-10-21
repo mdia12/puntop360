@@ -38,18 +38,6 @@ const CTA = () => {
               Llamar ahora
             </a>
           </div>
-          
-          <div className="mt-12 text-center animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <p className="text-gray-400 font-poppins text-sm mb-4">
-              También puedes escribirnos a:
-            </p>
-            <a 
-              href="mailto:contact@punto360.es" 
-              className="text-gold hover:text-gold-light transition-colors font-poppins font-medium text-lg"
-            >
-              contact@punto360.es
-            </a>
-          </div>
         </div>
       </div>
     </section>
