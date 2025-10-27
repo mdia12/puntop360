@@ -102,6 +102,16 @@ const Footer = () => {
               Punto360 traite vos données de contact uniquement pour répondre à votre demande. Voir politique de confidentialité.
             </span>
           </div>
+
+          {/* Image Rights */}
+          <div className="mt-4 text-sm text-gray-500 font-poppins">
+            <span data-lang="es">
+              Las imágenes presentadas proceden de proyectos realizados por Punto360 para sus clientes. Todos los derechos reservados.
+            </span>
+            <span data-lang="fr" className="hidden">
+              Les images présentées proviennent de projets réalisés par Punto360 pour ses clients. Tous droits réservés.
+            </span>
+          </div>
         </div>
       </div>
       
